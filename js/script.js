@@ -10,20 +10,18 @@ myForm.addEventListener('submit', function (event) {
 })
 
 // Chiedere Nome e Cognome
-const nameSurname = document.getElementById("nameSurname")
+const nameSurname = document.getElementById("nameSurname").value
 console.log (nameSurname)
 
 // Chiedere Km
-const kmUsers = document.getElementById("kmUsers")
+const kmUsers = document.getElementById("kmUsers").value
 console.log (kmUsers)
-
-// Chiedere età
-const ageUsers = document.getElementById("ageUsers")
-console.log (ageUsers)
 
 // Calcolare costo biglietto in base ai km
 const priceTicket = kmUsers * 0.21
 console.log (priceTicket)
+
 // Ciclo IF ELSE per calcolare sconto in base all'età
+
 
 

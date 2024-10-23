@@ -20,13 +20,16 @@
           <label for="mUsersk" class="form-label">Quanti km devi fare?</label>
           <input type="text" class="form-control" id="kmUsers">
         </div>
-        <div class="mb-3">
-          <label for="ageUsers" class="form-label">Quanti anni hai?</label>
-          <input type="text" class="form-control" id="ageUsers">
-        </div>
+        <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Fascia d'età</option>
+            <option value="1">Maggiorenne</option>
+            <option value="2">Minorenne</option>
+            <option value="3">Over 65</option>
+          </select>
         <button id="genera" type="submit" class="btn btn-primary">Genera</button>
       </form>
 
     <script src="./js/script.js"></script>
 </body>
 </html>
+
