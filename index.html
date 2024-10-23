@@ -11,16 +11,20 @@
 </head>
 <body>
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <form class="mt-20">
+    <form id="myForm">
         <div class="mb-3">
-          <label for="kmUsers" class="form-label">Quanti km devi fare?</label>
-          <input type="kmUsers" class="form-control" id="kmUsers">
+            <label for="nameSurname" class="form-label">Nome e Cognome</label>
+            <input type="text" class="form-control" id="nameSurname">
+          </div>
+        <div class="mb-3">
+          <label for="mUsersk" class="form-label">Quanti km devi fare?</label>
+          <input type="text" class="form-control" id="kmUsers">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Quanti anni hai?</label>
-          <input type="ageUsers" class="form-control" id="ageUsers">
+          <label for="ageUsers" class="form-label">Quanti anni hai?</label>
+          <input type="text" class="form-control" id="ageUsers">
         </div>
-        <button type="submit" class="btn btn-primary">Genera</button>
+        <button id="genera" type="submit" class="btn btn-primary">Genera</button>
       </form>
 
     <script src="./js/script.js"></script>

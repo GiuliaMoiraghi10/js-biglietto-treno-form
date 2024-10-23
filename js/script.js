@@ -1,9 +1,29 @@
 console.log("js Biglietto Treno")
 
-// Scrivere un programma che chieda all’utente (prompt)
-// - Il numero di chilometri da percorrere -> Primo INPUT
-// - Età del passeggero -> Secondo INPUT
+//impedire alla pagina di inviare i dati
+const myForm = document.getElementById('myForm');
+//console.log(formElement);
 
-// - il prezzo del biglietto è definito in base ai km (0.21 € al km) -> km * 0,21
-// - va applicato uno sconto del 20% per i minorenni -> sale=priceTicket * 20 / 100
-// - va applicato uno sconto del 40% per gli over 65 -> sale=priceTicket * 40 / 100
+myForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+})
+
+// Chiedere Nome e Cognome
+const nameSurname = document.getElementById("nameSurname")
+console.log (nameSurname)
+
+// Chiedere Km
+const kmUsers = document.getElementById("kmUsers")
+console.log (kmUsers)
+
+// Chiedere età
+const ageUsers = document.getElementById("ageUsers")
+console.log (ageUsers)
+
+// Calcolare costo biglietto in base ai km
+const priceTicket = kmUsers * 0.21
+console.log (priceTicket)
+// Ciclo IF ELSE per calcolare sconto in base all'età
+
+
